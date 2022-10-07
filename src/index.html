@@ -6,13 +6,15 @@
     <meta charset="UTF-8">
 
     <title>Alex - Веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header>
         <nav>
-            <div class="logo">Alex</div>
+            <div class="logo">Александр</div>
             <div class="menu">
                 <ul>
                     <li>Обо мне</li>
@@ -36,66 +38,81 @@
 
         </div>
     </div>
-    <div class="about_me">...</div>
+    <div class="about_me">
+        <div class="about_me_container">
+            <h2>ОБО МНЕ</h2>
+            <img src="img/mini-me.png" alt="">
+            <p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, soluta minima! Expedita sit, fugit,<br> molestias at impedit hic doloremque, blanditiis nostrum numquam inventore est perferendis!</p>
+            <p class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid mollitia debitis iste totam ut fugiat <br> reiciendis in dolor, nam libero deleniti eveniet eum qui voluptatem?</p>
+            <input type="submit" value="Скачать резюме">
+        </div>
+    </div>
+
     <div class="my_works">...</div>
 
     <div class="skills">
-        <div class="skils_conteiner">
-            <h3>Что я умею</h3>
-            <img src="img/line.png" alt="">
+        <div class="skills_conteiner">
+            <h2>ЧТО Я УМЕЮ</h2>
             <hr>
-            <div class="skill">
+            <div class="skills_item">
                 <img src="img/computer.png">
                 <h3>Веб-дизайн</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsum.</p>
             </div>
 
-            <div class="skill">
+            <div class="skills_item">
                 <img src="img/sign.png" alt="">
                 <h3>Разработка</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsum.</p>
             </div>
 
-            <div class="skill">
+            <div class="skills_item">
                 <img src="img/rocket.png" alt="">
                 <h3>СЕО оптимизация</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsum.</p>
             </div>
 
-            <div class="skill">
+            <div class="skills_item">
                 <img src="img/gramophone.png" alt="">
                 <h3>Маркетинг</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsum.</p>
             </div>
+            <div class="clear"></div>
         </div>
     </div>
 
-    <div class="cases">...</div>
     <div class="zagolovoc">
         <h2>КЕЙСЫ</h2>
-        <img src="img/line.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, voluptatum.</p>
+
+        <img src="img/keys.png" alt="">
+
     </div>
-    <div class="info">
-        <h2>CLIENT:</h2>
-        <h5>Компания</h5>
-        <h2>WEBSITE</h2>
-        <h5>http://www.ctoto.com</h5>
-        <input type="submit" value="VISIT LIVE SITE">
+
+    <div class="vse">
+        <div class="info">
+            <h2>CLIENT:</h2>
+            <h5>Компания</h5>
+            <h2>WEBSITE</h2>
+            <h5>http://www.ctoto.com</h5>
+            <input type="submit" value="VISIT LIVE SITE">
+        </div>
+        <div class="infoTwo">
+            <h2>Название проекта</h2>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa odit eos<br> esse ratione ab qui sint expedita officiis aliquam sunt mollitia nemo <br>consequuntur in repudiandae soluta dignissimos, nihil eveniet molestias.</h5>
+        </div>
     </div>
-    <div class="project">
-        <h2>Название проекта</h2>
-        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa odit eos<br> esse ratione ab qui sint expedita officiis aliquam sunt mollitia nemo <br>consequuntur in repudiandae soluta dignissimos, nihil eveniet molestias.</h5>
-    </div>
+
 
     <div class="price">
         <div class="puncts">
-           <h2>РАСЧЕТ СТОИМОСТИ</h2>
-                   <hr>
+            <h2>Расчет стоимости</h2>
+            <hr>
             <ul>
                 <li>
-                    <h2>ТИП САЙТА</h2>
+                    <h3>ТИП САЙТА</h3>
                     <form action="">
-                        <select name="puncts" id="1">
+                        <select class="Myselect" name="puncts" id="1">
                             <option selected disabled value="p1">Выберите пункт...</option>
                             <option value="op2">Магазин</option>
                             <option value="op3">Визитка</option>
@@ -104,9 +121,9 @@
                     </form>
                 </li>
                 <li>
-                    <h2>ДИЗАЙН</h2>
+                    <h3>ДИЗАЙН</h3>
                     <form action="">
-                        <select name="puncts" id="1">
+                        <select class="Myselect" name="puncts" id="1">
                             <option selected disabled value="p1">Выберите пункт...</option>
                             <option value="op2">Серый</option>
                             <option value="op3">Белый</option>
@@ -115,9 +132,9 @@
                     </form>
                 </li>
                 <li>
-                    <h2>АДАПТИВНОСТЬ</h2>
+                    <h3>АДАПТИВНОСТЬ</h3>
                     <form action="">
-                        <select name="puncts" id="1">
+                        <select class="Myselect" name="puncts" id="1">
                             <option selected disabled value="p1">Выберите пункт...</option>
                             <option value="op2">малоадаптивный</option>
                             <option value="op3">среднеадаптивный</option>
@@ -129,36 +146,41 @@
         </div>
         <hr>
         <div class="price_terms">
-            <h4>Сроки 0</h4>
-            <h4>Стоимость 0</h4>
+           <div class="price_two">
+            <h4>Сроки </h4>
+            <h4>Стоимость </h4>
+            </div>
+            <div class="number">
+                <h4>0</h4>
+                <h4>0</h4>
+            </div>
         </div>
     </div>
 
-    <div class="stats">
+    <div class="stats_item">
         <div class="stats_conteiner">
-            <h3>Немного статистики</h3>
-            <img src="img/line.png" alt="">
-            <div class="stats">
+            <h3 class="qwer">Немного статистики</h3>
+            <div class="statsB">
                 <img src="img/smile.png" alt="">
-                <h3>50</h3>
+                <h2>0</h2>
                 <p>Счастливых клиентов</p>
             </div>
 
-            <div class="stats">
+            <div class="statsB">
                 <img src="img/staples.png" alt="">
-                <h3>2000</h3>
+                <h2>50</h2>
                 <p>Часов работы</p>
             </div>
 
-            <div class="stats">
+            <div class="statsB">
                 <img src="img/mark.png" alt="">
-                <h3>120</h3>
+                <h2>1</h2>
                 <p>Проектов завершено</p>
             </div>
 
-            <div class="stats">
+            <div class="statsB">
                 <img src="img/beaker.png" alt="">
-                <h3>13</h3>
+                <h2>0</h2>
                 <p>Наград получено</p>
             </div>
         </div>
@@ -166,13 +188,11 @@
 
     <div class="reviews">
         <h2>ОТЗЫВЫ</h2>
-        <img src="img/line.png" alt="">
-        <hr>
         <img src="img/face.png" alt="">
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, error.</h4>
         <h4>Lorem ipsum dolor sit.</h4>
         <span><b>Кто то</b>, директор ООО"Что то".</span>
-        <form action="#">
+        <form class="radio" action="#">
             <input type="radio" name=text_inout1>
             <input type="radio" name=text_inout1>
             <input type="radio" name=text_inout1>
@@ -181,46 +201,45 @@
 
     <div class="contacts">
         <h3>МОИ КОНТАКТЫ</h3>
-        <img src="img/line.png" alt="">    
         <hr>
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
         <div class="contacts_conteiner">
-            <div class="contacts">
+            <div class="contacts_item">
                 <img src="img/geo.png" alt="">
-                <h3>Санкт-Петербург</h3>
+                <h2>Санкт-Петербург</h2>
                 <p>Невский проспект 11</p>
             </div>
-            <div class="contacts">
+            <div class="contacts_item">
                 <img src="img/sms.png" alt="">
-                <h3>info@companyname.com</h3>
+                <h2>info@companyname.com</h2>
             </div>
-            <div class="contacts">
+            <div class="contacts_item">
                 <img src="img/phone.png" alt="">
-                <h3>+7 999 999-99-99</h3>
+                <h2>+7 999 999-99-99</h2>
             </div>
+            <div class="clear"></div>
         </div>
         <div class="message">
-            <h3>ОСТАВТЕ МНЕ СООБЩЕНИЕ</h3>
-            <form action="#">
+            <h2>ОСТАВТЕ МНЕ СООБЩЕНИЕ</h2>
+            <form class="inputt" action="#">
                 <input type="text" name="text_input" value="" placeholder="Имя">
                 <input type="text" name="text_input" value="" placeholder="Email"><br>
-                <input type="text" name="text_input" value="" placeholder="Сообщение"><br>
-                <input type="submit" value="Отправить">
+                <textarea class="three" name="text_input" id="" cols="46" rows="7" placeholder="Сообщение"></textarea><br>
+                <input class="four" type="submit" value="Отправить">
             </form>
         </div>
         <div class="message_ing">
-            <img src="img/facebooc.png" alt="">
-            <img src="img/twitter.png" alt="">
-            <img src="img/boll.png" alt="">
-            <img src="img/cat.png" alt="">
-            <img src="img/instagram.png" alt="">
-            <img src="img/in.png" alt="">
+            <img class="imm" src="img/facebooc.png" alt="">
+            <img class="imm" src="img/twitter.png" alt="">
+            <img class="imm" src="img/boll.png" alt="">
+            <img class="imm" src="img/cat.png" alt="">
+            <img class="imm" src="img/instagram.png" alt="">
+            <img class="imm" src="img/in.png" alt="">
         </div>
     </div>
 
     <div class="location">
         <img src="img/map.png" alt="">
-        <img src="img/here.png" alt="">
     </div>
 
     <div class="end">
@@ -230,3 +249,38 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

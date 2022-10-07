@@ -1,0 +1,464 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    widows: 100%;
+    height: 58px;
+    background: #1b304f;
+}
+
+.logo {
+    color: #fff;
+    font-size: 30px;
+    line-height: 55px;
+    padding-left: 450px;
+    float: left;
+}
+
+.menu {
+    float: left;
+    padding-left: 700px;
+}
+
+.menu li {
+    float: left;
+    color: #fff;
+    line-height: 55px;
+    margin-right: 70px;
+    text-transform: uppercase;
+
+}
+
+.main {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/me.png) 110% 100%/auto 85% no-repeat, url(../img/fone.jpg) center/cover no-repeat;
+}
+
+.title_conteiner {
+    float: left;
+    margin: 430px 0px 0px 520px;
+    color: #30486b;
+    text-align: center;
+}
+
+.title_conteiner h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.title_conteiner h4 {
+    margin-top: 40px;
+    font-size: 27px;
+}
+
+.title_conteiner input {
+    height: 70px;
+    width: 150px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 28px 0px 14px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about_me h2 {
+    text-align: center;
+    border-bottom: 5px solid #d17700;
+    width: 120px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 1200px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.about_me img {
+    display: block;
+    margin: 0px auto;
+    width: 20%;
+}
+
+.about_me_container p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.about_me_container .two {
+    margin-top: 20px;
+}
+
+.about_me_container input {
+    height: 70px;
+    width: 170px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 28px 0px 14px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 1185px;
+}
+
+.skills {
+    background: url(../img/fone2.png) center/cover no-repeat;
+    height: 500px;
+    padding-top: 40px;
+}
+
+.skills_conteiner {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.skills_item {
+    float: left;
+    width: 400px;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.skills_conteiner h2 {
+    text-align: center;
+    border-bottom: 5px solid #d17700;
+    width: 150px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 725px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.skills_conteiner h3 {
+    color: #d17700;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.clear {
+    clear: left;
+}
+
+.zagolovoc {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.zagolovoc h2 {
+    text-align: center;
+    border-bottom: 5px solid #d17700;
+    width: 110px;
+    font-size: 20px;
+    margin-left: 1225px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    color: #1b304f:
+}
+
+.zagolovoc img {
+    display: block;
+    margin: 50px auto;
+    width: 50%;
+}
+
+.info {
+    margin-left: 630px;
+    float: left;
+    width: 690px;
+}
+
+.info h2 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.info h5 {
+    font-size: 18px;
+}
+
+.info input {
+    height: 55px;
+    width: 150px;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 20px 28px 0px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #63b5ae;
+}
+
+.infoTwo h2 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.infoTwo h5 {
+    font-size: 18px;
+}
+
+.price {
+    display: block;
+    clear: left;
+    margin: 200px 200px 0px 1070px;
+}
+
+.puncts {
+    margin-left: -200px;
+}
+
+.puncts h2 {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 5px solid #d17700;
+    width: 350px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    color: #1b304f;
+    margin-left: 250px;
+}
+
+.Myselect {
+    display: block;
+    width: 900px;
+    height: 50px;
+    background: #eeeeee;
+}
+
+.puncts h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.price_terms {
+    display: block;
+    border-top: 3px solid #eeeeee;
+    width: 900px;
+    margin-left: -200px;
+    margin-top: 30px;
+}
+
+.price_two {
+    margin-top: 20px;
+    line-height: 30px;
+    float: left
+}
+
+.number {
+    margin-top: 20px;
+    line-height: 30px;
+    margin-left: 890px;
+}
+
+.stats_item {
+    margin-top: 130px;
+    background: url(../img/fone3.jpg) center/cover no-repeat;
+    width: auto;
+    height: 500px;
+}
+
+.stats_conteiner h3 {
+    padding-top: 70px;
+    text-align: center;
+    border-bottom: 5px solid #d17700;
+    width: 200px;
+    font-size: 20px;
+    margin-left: 1150px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: #1b304f;
+    margin-top: 100px;
+}
+
+.statsB {
+    margin-top: 100px;
+    float: left;
+    margin-left: 410px;
+    text-align: center;
+    width: auto;
+}
+
+.statsB h2 {
+    margin-top: 10px;
+    color: #1b304f;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 40px;
+
+
+}
+
+.stats_conteiner h3 qwer {
+    margin-top: 200px;
+}
+
+
+.reviews {
+    text-align: center;
+    clear: left;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.reviews h2{
+    text-align: center;
+    border-bottom: 5px solid #d17700;
+    width: 120px;
+    font-size: 20px;
+    margin-left: 1210px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: #1b304f;
+    margin-bottom: 70px;
+}
+
+.reviews h4{
+    margin-top: 30px;
+}
+
+.radio{
+    margin-top: 30px;
+}
+
+.contacts{
+    color: #fff;
+    background: url(../img/fone4.jpg) center/cover no-repeat;
+}
+
+
+.contacts h3{
+    text-align: center;
+    border-bottom: 5px solid #d17700;
+    width: 200px;
+    font-size: 20px;
+    margin-left: 1170px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
+
+.contacts h4{
+    text-align: center;
+}
+
+.contacts_item{
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    margin-left: 530px;
+}
+
+.message h2{
+    text-align: center;
+}
+
+.inputt{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.three{
+    margin-top: 10px;
+}
+
+.four{
+    height: 55px;
+    width: 150px;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 20px 28px 0px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #63b5ae;
+}
+
+.message_ing{
+    text-align: center;
+    line-height: 60px;
+    
+    
+}
+
+.imm{
+    margin-left: 40px;
+    
+}
+
+.location img{
+    width: 100%
+}
+
+.end{
+    background: #1b304f;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
