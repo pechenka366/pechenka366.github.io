@@ -147,7 +147,6 @@ main{
     color: #fff;
     font-size: 30px;
     line-height: 55px;
-    padding-left: 450px;
     float: left;
     -webkit-animation: comming 1.5s ease;
     -o-animation: comming 1.5s ease;
@@ -165,10 +164,10 @@ main{
 
 .menu {
     float: left;
-    padding-left: 700px;
 }
 
 .menu li {
+    font-size: 15px;
     float: left;
     color: #fff;
     line-height: 55px;
@@ -178,6 +177,11 @@ main{
     -o-animation: jump 0.4s ease forwards;
     animation: jump 0.4s ease forwards;
     opacity: 0;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 @keyframes jump{
@@ -225,6 +229,25 @@ main{
     }
 }
 
+.menu li a:visited{
+    color: white;
+}
+
+.menu li a{
+    transition: all 0.3s;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:hover{
+    color: coral;
+    transform: scale(1.1);
+}
+
+.menu li a:active{
+    transform: scale(1.2);
+}
+
 .title_conteiner {
     float: left;
     margin: 430px 0px 0px 520px;
@@ -264,25 +287,6 @@ main{
     font-weight: bold;
 }
 
-.menu li a:visited{
-    color: white;
-}
-
-.menu li a{
-    transition: all 0.3s;
-    transform: scale(1);
-    display: inline-block;
-}
-
-.menu li a:hover{
-    color: coral;
-    transform: scale(1.1);
-}
-
-.menu li a:active{
-    transform: scale(1.2);
-}
-
 .title_conteiner input{
     transition: all 0.2s;
     transform: scale(1);
@@ -296,6 +300,7 @@ main{
 .title_conteiner input:active{
     transform: scale(1.2);
 }
+/*
 
 .about_me h2 {
     text-align: center;
@@ -860,11 +865,12 @@ main{
     margin-top: 20px;
     float: left;
     text-align: center;
-    margin-left: 530px;
+    margin-left: 530px; 
 }
 
 .message h2{
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .inputt{
@@ -907,8 +913,6 @@ main{
 .message_ing{
     text-align: center;
     line-height: 60px;
-    
-    
 }
 
 .imm1{
@@ -964,7 +968,7 @@ main{
     text-align: center;
     padding-top: 20px;
 }
-
+*/
 
 
 
