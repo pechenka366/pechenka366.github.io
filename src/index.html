@@ -26,10 +26,10 @@
         <nav>
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-1">
+                    <div class="offset-mss-2 col-mss-1 offset-ms-2 col-ms-1 offset-s-2 col-s-1 offset-m-2 col-m-1 offset-xxl-2 col-xxl-1 offset-xl-1 col-xl-1 col-lg-2 col-7">
                         <div class="logo">Александр</div>
                     </div>
-                    <div class="offset-xxl-1 col-xxl-8 ">
+                    <div class="px-0 offset-mss-3 col-mss-5 offset-ms-2 col-ms-6 offset-s-2 col-s-6 offset-m-2 col-m-7 offset-xxl-1 col-xxl-8 offset-xl-1 col-xl-9 col-lg-10 d-none d-lg-block">
                         <div class="menu">
                             <ul>
                                 <li><a href="#">Обо мне</a></li>
@@ -39,6 +39,22 @@
                                 <li><a href="#">Отзывы</a></li>
                                 <li><a href="#">Контакты</a></li>
                             </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#">Кейс</a></li>
+                                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -47,13 +63,17 @@
     </header>
     <main>
         <section class="main">
-            <div class="title_conteiner">
-
-                <h1>Привет<br> Я Александр</h1>
-                <h4>Веб-разработчик</h4>
-                <input type="button" value="Обо мне">
-                <input type="button" value="Мои работы">
-
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6 mt-5 pt-5">
+                        <div class="title_conteiner mt-5">
+                            <h1>Привет<br> Я Александр</h1>
+                            <h4>Веб-разработчик</h4>
+                            <input type="button" value="Обо мне">
+                            <input type="button" value="Мои работы">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -263,7 +283,7 @@
         <h5>Copyight@2021 Alex </h5>
     </div>-->
 
-
+    <skript src="js/bootstrap.bundle.js"></skript>
 </body>
 
 </html>
