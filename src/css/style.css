@@ -933,7 +933,6 @@ ol, ul {
     background: url(../img/fone4.jpg) center/cover no-repeat;
 }
 
-
 .contacts h3{
     padding-top: 30px;
     margin: 0 auto;
@@ -1009,6 +1008,7 @@ ol, ul {
 .message_ing{
     text-align: center;
     line-height: 60px;
+    padding-bottom: 50px;
 }
 
 .imm1{
