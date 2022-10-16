@@ -346,16 +346,21 @@ main {
 
 
 .about_me h2 {
+    margin: 0 auto;
+    max-width: 120px;
     text-align: center;
     border-bottom: 5px solid #d17700;
     font-size: 18px;
     padding-bottom: 10px;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .about_me img {
     animation: anim_me 2s;
     width: 10%;
+    min-height: 100px;
+    min-width: 100px;
 }
 
 @keyframes anim_me {
@@ -410,40 +415,17 @@ main {
     transform: scale(1.2);
 }
 
-@media (max-width: 576px) {
-    .about_me h2 {
-        margin-left: -35px;
-        width: 100px;
-        text-align: center;
-        border-bottom: 5px solid #d17700;
-        font-size: 18px;
-        padding-bottom: 10px;
-        border-radius: 10px;
-    }
-}
-
-@media (max-width: 400px) {
-    .about_me h2 {
-        margin-left: -30px;
-        width: 100px;
-        text-align: center;
-        border-bottom: 5px solid #d17700;
-        font-size: 18px;
-        padding-bottom: 10px;
-        border-radius: 10px;
-    }
-}
-
 .skills {
     background: url(../img/fone2.png) center/cover no-repeat;
 }
 
 .skills_conteiner {
     padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .skills_conteiner h2 {
-    max-width: 180px;
+    max-width: 120px;
     text-align: center;
     border-bottom: 5px solid #d17700;
     font-size: 17px;
@@ -451,37 +433,12 @@ main {
     padding-bottom: 10px;
     border-radius: 10px;
     margin-bottom: 30px;
+    margin: 0 auto;
 }
 
-@media (max-width: 576px) {
-    .skills_conteiner h2 {
-        margin-left: 150px;
-        width: 120px;
-        text-align: center;
-        border-bottom: 5px solid #d17700;
-        font-size: 18px;
-        padding-bottom: 10px;
-        border-radius: 10px;
-    }
-}
-
-@media (max-width: 400px) {
-    .skills_conteiner h2 {
-        margin-left: 110px;
-        width: 140px;
-        text-align: center;
-        border-bottom: 5px solid #d17700;
-        font-size: 18px;
-        padding-bottom: 10px;
-        border-radius: 10px;
-    }
-}
-/*
 .skills_item1 {
     display: block;
     float: left;
-    width: 400px;
-    text-align: center;
     padding-top: 50px;
     opacity: 0;
     position: relative;
@@ -504,8 +461,6 @@ main {
 .skills_item2 {
     display: block;
     float: left;
-    width: 400px;
-    text-align: center;
     padding-top: 50px;
     opacity: 0;
     position: relative;
@@ -528,8 +483,6 @@ main {
 .skills_item3 {
     display: block;
     float: left;
-    width: 400px;
-    text-align: center;
     padding-top: 50px;
     opacity: 0;
     position: relative;
@@ -552,8 +505,6 @@ main {
 .skills_item4 {
     display: block;
     float: left;
-    width: 400px;
-    text-align: center;
     padding-top: 50px;
     opacity: 0;
     position: relative;
@@ -574,24 +525,9 @@ main {
     }
 }
 
-/*
-.skills_item:nth-child(4){
-    animation-delay: 0.5s;
+.vse{
+    
 }
-
-.skills_item:nth-child(3){
-    animation-delay: 1s;
-}
-.skills_item:nth-child(2){
-    animation-delay: 1.5s;
-}
-.skills_item:nth-child(1){
-    animation-delay: 2s;
-}
-
-*/
-/*
-
 
 .skills_conteiner h3 {
     color: #d17700;
@@ -600,39 +536,33 @@ main {
     font-size: 20px;
 }
 
-
-
-.clear {
-    clear: left;
-}
-
 .zagolovoc {
-    text-align: center;
     margin-top: 80px;
 }
 
-.zagolovoc h2 {
-    text-align: center;
+.zagc {
+    margin: 0 auto;
+    max-width: 120px; 
     border-bottom: 5px solid #d17700;
-    width: 110px;
     font-size: 20px;
-    margin-left: 1225px;
     padding-bottom: 10px;
     border-radius: 10px;
     margin-bottom: 50px;
-    color: #1b304f:
+    color: #1b304f;
+    text-align: center;
+    font-weight: bold;
+}
+
+.zagolovoc p{
+    text-align: center;
 }
 
 .zagolovoc img {
     display: block;
     margin: 50px auto;
-    width: 50%;
-}
-
-.info {
-    margin-left: 630px;
-    float: left;
-    width: 690px;
+    width: 100%;
+    min-height: 200px;
+    min-width: 340px;
 }
 
 .info h2 {
@@ -656,7 +586,6 @@ main {
     color: #fff;
     font-size: 13px;
     padding: 0px 16px;
-    margin: 20px 28px 0px 0px;
     font-size: 16px;
     font-weight: bold;
     background-color: #63b5ae;
@@ -682,32 +611,68 @@ main {
     font-size: 18px;
 }
 
-.price {
-    display: block;
-    clear: left;
-    margin: 200px 200px 0px 1070px;
+
+/*
+.skills_item:nth-child(4){
+    animation-delay: 0.5s;
 }
 
-.puncts {
-    margin-left: -200px;
+.skills_item:nth-child(3){
+    animation-delay: 1s;
+}
+.skills_item:nth-child(2){
+    animation-delay: 1.5s;
+}
+.skills_item:nth-child(1){
+    animation-delay: 2s;
+}
+*/
+
+.price {
+    margin-top: 100px;
+    display: block;
+    box-shadow: 1px 0px 20px #7b7878;
+    padding-top: 40px;
+    width: 80%;
+    max-width: 1000px;
+    height: 80%;
+    max-height: 800px;
+}
+
+ol, ul {
+  padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.puncts{
+    margin: 0 auto;
+    border-bottom: 3px solid #eeeeee;
+    width: 85%;
 }
 
 .puncts h2 {
-    font-size: 40px;
+    font-weight: bold;
     text-align: center;
-    border-bottom: 5px solid #d17700;
-    width: 350px;
+    font-size: 20px;
+    margin-top: 50px;
     padding-bottom: 10px;
     border-radius: 10px;
-    margin-bottom: 50px;
-    color: #1b304f;
-    margin-left: 250px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+
+.puncts h3 {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
 }
 
 
 .Myselect1 {
     display: block;
-    width: 900px;
+    width: 100%;
     height: 50px;
     background: #eeeeee;
     opacity: 0;
@@ -715,6 +680,7 @@ main {
     -o-animation: select1 3s forwards;
     animation: select1 3s forwards;
     position: relative;
+    margin-bottom: 35px;    
 }
 
 @keyframes select1{
@@ -730,13 +696,14 @@ main {
 
 .Myselect2 {
     display: block;
-    width: 900px;
+    width: 100%;
     height: 50px;
     background: #eeeeee;
     -webkit-animation: select2 3s forwards;
     -o-animation: select2 3s forwards;
     animation: select2 3s forwards;
     position: relative;
+    margin-bottom: 35px; 
 }
 
 @keyframes select2{
@@ -752,13 +719,15 @@ main {
 
 .Myselect3 {
     display: block;
-    width: 900px;
+    width: 100%;
     height: 50px;
     background: #eeeeee;
     -webkit-animation: select3 3s forwards;
     -o-animation: select3 3s forwards;
     animation: select3 3s forwards;
     position: relative;
+    margin-bottom: 30px; 
+    
 }
 
 @keyframes select3{
@@ -772,25 +741,15 @@ main {
     }
 }
 
-.puncts h3 {
-    font-size: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-
-}
-
 .price_terms {
+    margin: 0 auto;
     display: block;
-    border-top: 3px solid #eeeeee;
-    width: 900px;
-    margin-left: -200px;
+    width: 80px;
     margin-top: 30px;
 }
 
 .price_two {
-    margin-top: 20px;
     line-height: 30px;
-    float: left;
     position: relative;
     opacity: 0;
     -webkit-animation: prise 3s forwards;
@@ -811,42 +770,67 @@ main {
 
 
 .number {
-    margin-top: 20px;
+    padding-top: 30px;
     line-height: 30px;
-    margin-left: 890px;
     position: relative;
     opacity: 0;
     -webkit-animation: prise 3s forwards;
     -o-animation: prise 3s forwards;
     animation: prise 3s forwards;
+    margin-left: 40px;
 }
 
-.stats_item {
-    margin-top: 130px;
-    background: url(../img/fone3.jpg) center/cover fixed no-repeat;
-    width: auto;
-    height: 500px;
+.price input {
+    display: block;
+    margin: 30px auto 0 auto;
+    height: 55px;
+    width: 250px;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    padding: 0px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #63b5ae;
+    transform: scale(1);
+    transition: all 0.2s
+}
+
+.price input:hover{    
+}
+
+.price input:active{
+    transform: scale(1.3);
 }
 
 .stats_conteiner h3 {
-    padding-top: 70px;
+    max-width: 230px;
     text-align: center;
     border-bottom: 5px solid #d17700;
-    width: 200px;
-    font-size: 20px;
-    margin-left: 1150px;
+    font-size: 17px;
+    margin-top: 50px;
     padding-bottom: 10px;
     border-radius: 10px;
-    color: #1b304f;
-    margin-top: 100px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.stats_item {
+    margin-top: 70px;
+    background: url(../img/fone3.jpg) center/cover fixed no-repeat;
+    width: auto;
+    padding-top: 50px;
+    
 }
 
 .statsB1 {
+    padding-bottom: 100px;
     margin-top: 100px;
-    float: left;
-    margin-left: 410px;
     text-align: center;
-    width: auto;
     position: relative;
     opacity: 0;
     -webkit-animation: stats1 3s forwards;
@@ -866,11 +850,9 @@ main {
 }
 
 .statsB2 {
+    padding-bottom: 100px;
     margin-top: 100px;
-    float: left;
-    margin-left: 410px;
     text-align: center;
-    width: auto;
     position: relative;
     opacity: 0;
     -webkit-animation: stats2 3s forwards;
@@ -889,13 +871,21 @@ main {
     }
 }
 
-.statsB h2 {
+.statsB1 h2 {
     margin-top: 10px;
     color: #1b304f;
     font-weight: bold;
     margin-bottom: 8px;
-    font-size: 40px;
+    font-size: 30px;
 
+}
+
+.statsB2 h2 {
+    margin-top: 10px;
+    color: #1b304f;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 30px;
 
 }
 
@@ -903,24 +893,31 @@ main {
     margin-top: 200px;
 }
 
+.stats_conteiner p{
+    font-size: 20px;
+    font-weight: bold;
+}
 
 .reviews {
     text-align: center;
     clear: left;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
+.reviews img{
+    padding-top: 30px;
+}
 .reviews h2{
+    max-width: 130px;
     text-align: center;
     border-bottom: 5px solid #d17700;
-    width: 120px;
-    font-size: 20px;
-    margin-left: 1210px;
+    font-size: 17px;
     padding-bottom: 10px;
     border-radius: 10px;
-    color: #1b304f;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    font-weight: bold;    
 }
 
 .reviews h4{
@@ -938,15 +935,17 @@ main {
 
 
 .contacts h3{
-    text-align: center;
+    padding-top: 30px;
+    margin: 0 auto;
+    max-width: 200px; 
     border-bottom: 5px solid #d17700;
-    width: 200px;
     font-size: 20px;
-    margin-left: 1170px;
     padding-bottom: 10px;
     border-radius: 10px;
     margin-bottom: 50px;
-    padding-top: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
 }
 
 .contacts h4{
@@ -954,13 +953,18 @@ main {
 }
 
 .contacts_item{
-    margin-top: 20px;
-    float: left;
-    text-align: center;
-    margin-left: 530px; 
+    margin-top: 50px;
+    text-align: center; 
+    margin-bottom: 40px;
+}
+
+.contacts_conteiner h2{
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 .message h2{
+    font-size: 20px;
     text-align: center;
     padding-bottom: 15px;
 }
@@ -984,7 +988,7 @@ main {
     color: #fff;
     font-size: 13px;
     padding: 0px 16px;
-    margin: 20px 28px 0px 0px;
+    margin-top: 20px;
     font-size: 16px;
     font-weight: bold;
     background-color: #63b5ae;
@@ -1008,7 +1012,7 @@ main {
 }
 
 .imm1{
-    margin-left: 40px;
+    margin-left: 20px;
     position: relative;
     opacity: 0;
     -webkit-animation: imm1 3s forwards;
@@ -1029,7 +1033,7 @@ main {
 }
 
 .imm2{
-    margin-left: 40px;
+    margin-left: 20px;
     position: relative;
     opacity: 0;
     -webkit-animation: imm2 3s forwards;
@@ -1060,4 +1064,4 @@ main {
     text-align: center;
     padding-top: 20px;
 }
-*/
+
