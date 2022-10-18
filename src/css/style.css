@@ -361,6 +361,7 @@ main {
     width: 10%;
     min-height: 100px;
     min-width: 100px;
+    padding-top: 20px;
 }
 
 @keyframes anim_me {
