@@ -46,13 +46,16 @@ otvet();
 */
 
 
-let prise = 0, days = 0;
+let prise = 0,
+    days = 0;
 let type, disain, adaptiv;
 let mistake = 0;
 let tr = false;
-let mass = 0, masstwo = 0, massthree = 0;
+let mass = 0,
+    masstwo = 0,
+    massthree = 0;
 let calc = {
-    prise:[
+    prise: [
         [1500, 1000, 2000],
         [500, 500, 500],
         [2000, 2500, 3500],
@@ -62,11 +65,11 @@ let calc = {
         [1, 1, 1],
         [1, 2, 3],
     ],
-    start(mass, masstwo, massthree){
-       let sum = parseInt(calc.prise[0][mass - 1]) + parseInt(calc.prise[1][masstwo - 1]) + parseInt(calc.prise[2][massthree - 1])
+    start(mass, masstwo, massthree) {
+        let sum = parseInt(calc.prise[0][mass - 1]) + parseInt(calc.prise[1][masstwo - 1]) + parseInt(calc.prise[2][massthree - 1])
         let days = parseInt(calc.days[0][mass - 1]) + parseInt(calc.days[1][masstwo - 1]) + parseInt(calc.days[2][massthree - 1])
-    alert("Цена: " + sum + "р" + "\nСрок: " + days + "д") 
-}
+        alert("Цена: " + sum + "р" + "\nСрок: " + days + "д")
+    }
 }
 
 function question() {
@@ -82,8 +85,8 @@ function choice() {
 };
 choice();
 
-function otvet(){
-    
+function otvet() {
+
 }
 
 function result() {
@@ -104,7 +107,7 @@ function result() {
 
     if ((disain == "Серый") || (disain == "серый")) {
         masstwo = 1;
-    } else if ((disain == "Белый") || (disain == "  белый")) {
+    } else if ((disain == "Белый") || (disain == "белый")) {
         masstwo = 2;
     } else if ((disain == "Синий") || (disain == "синий")) {
         masstwo = 3;
@@ -136,7 +139,6 @@ function result() {
         tr = false;
         prise = 0;
         days = 0;
-        
     }
 }
 calc.start(mass, masstwo, massthree);

@@ -18,134 +18,6 @@ main {
     height: 100%;
 }
 
-/*.vsee{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    display: flex;
-    opacity: 1;
-}
-
-.vsee:active{
-    display: none;
-    opacity: 0;
-    z-index: 0;
-    margin-left:3000px; 
-}
-
-.fulll{
-    display: block;
-    width: 50%;
-    background-color: #1b304f;
-    animation: leftt 1s linear forwards;
-    opacity: 1;
-}
-
-.fullltwo{
-    display: block;
-    width: 50%;
-    background-color: #1b304f;
-    animation: rightt 1s linear forwards;
-    opacity: 1;
-}
-
-@keyframes leftt{
-    0%{
-        transform: translateX(0) scale(1) rotate(0);
-    }
-    50%{
-        transform: translateX(0) scale(.9) rotate(0deg);
-    }
-    100%{
-        transform: translateX(-100%) scale(.9) rotate(0deg);
-    }
-}
-
-@keyframes rightt{
-    0%{
-        transform: translateX(0) scale(1) rotate(0);
-    }
-    50%{
-        transform: translateX(0) scale(.9) rotate(0deg);
-    }
-    100%{
-        transform: translateX(100%) scale(.9) rotate(0deg);
-    }
-}
-*/
-
-@keyframes loadd {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-.load {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: loadd .2s ease forwards;
-    animation-delay: .5s;
-}
-
-.load span {
-    display: block;
-    height: 15px;
-    width: 15px;
-    background: #19e3d5;
-    margin: 0 7px;
-    border-radius: 10px;
-    animation: 1.2s upDown infinite;
-}
-
-.load span:first-child {
-    animation-delay: .15s;
-}
-
-.load span:nth-child(2) {
-    animation-delay: .3s;
-}
-
-.load span:nth-child(3) {
-    animation-delay: .45s;
-}
-
-.load span:nth-child(4) {
-    animation-delay: .6s;
-}
-
-.load span:last-child {
-    animation-delay: .75s;
-}
-
-@keyframes upDown {
-    0% {
-        height: 15px;
-        background: #19e3d5;
-    }
-
-    50% {
-        height: 60px;
-        background: #d33deb;
-    }
-
-    100% {
-        height: 15px;
-        background: #f00e43;
-    }
-}
-
 .logo {
     color: #fff;
     font-size: 30px;
@@ -354,25 +226,35 @@ main {
     padding-bottom: 10px;
     border-radius: 10px;
     font-weight: bold;
+    padding-top: 15px;
 }
 
-.about_me img {
-    animation: anim_me 2s;
+.about_me_img {
+    opacity: 0;
     width: 10%;
     min-height: 100px;
     min-width: 100px;
     padding-top: 20px;
 }
 
+.about_me_img.animation-class{
+    opacity: 1;
+    animation: anim_me 2s;
+}
+
 @keyframes anim_me {
     from {
+        opacity: 0;
         margin-left: -3000px;
     }
 
     to {
+        opacity: 1;
         margin-left: 0px;
     }
 }
+
+
 
 .mme {
     text-align: center;
@@ -416,6 +298,18 @@ main {
     transform: scale(1.2);
 }
 
+.one{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.one.animation-class{
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
 .skills {
     background: url(../img/fone2.png) center/cover no-repeat;
 }
@@ -426,6 +320,7 @@ main {
 }
 
 .skills_conteiner h2 {
+    font-weight: bold;
     max-width: 120px;
     text-align: center;
     border-bottom: 5px solid #d17700;
@@ -443,9 +338,13 @@ main {
     padding-top: 50px;
     opacity: 0;
     position: relative;
+}
+
+.skills_item1.animation-class{
     -webkit-animation: anim_itemone 3s forwards;
     -o-animation:  anim_itemone 3s forwards;
     animation:  anim_itemone 3s forwards;
+    opacity: 0;
 }
 
 @keyframes anim_itemone{
@@ -465,9 +364,13 @@ main {
     padding-top: 50px;
     opacity: 0;
     position: relative;
+}
+
+.skills_item2.animation-class{
     -webkit-animation: anim_itemtwo 3s forwards;
-    -o-animation: anim_itemtwo 3s forwards;
-    animation: anim_itemtwo 3s forwards;
+    -o-animation:  anim_itemtwo 3s forwards;
+    animation:  anim_itemtwo 3s forwards;
+    opacity: 0;
 }
 
 @keyframes anim_itemtwo{
@@ -487,9 +390,13 @@ main {
     padding-top: 50px;
     opacity: 0;
     position: relative;
+}
+
+.skills_item3.animation-class{
     -webkit-animation: anim_itemthree 3s forwards;
-    -o-animation: anim_itemthree 3s forwards;
-    animation: anim_itemthree 3s forwards;
+    -o-animation:  anim_itemthree 3s forwards;
+    animation:  anim_itemthree 3s forwards;
+    opacity: 0;
 }
 
 @keyframes anim_itemthree{
@@ -509,10 +416,14 @@ main {
     padding-top: 50px;
     opacity: 0;
     position: relative;
-    -webkit-animation: anim_itemfour 3s forwards;
-    -o-animation: anim_itemfour 3s forwards;
-    animation: anim_itemfour 3s forwards;
     
+}
+
+.skills_item4.animation-class{
+    -webkit-animation: anim_itemfour 3s forwards;
+    -o-animation:  anim_itemfour 3s forwards;
+    animation:  anim_itemfour 3s forwards;
+    opacity: 0;
 }
 
 @keyframes anim_itemfour{
@@ -677,11 +588,14 @@ ol, ul {
     height: 50px;
     background: #eeeeee;
     opacity: 0;
+    position: relative;
+    margin-bottom: 35px;    
+}
+
+.Myselect1.animation-class{
     -webkit-animation: select1 3s forwards;
     -o-animation: select1 3s forwards;
     animation: select1 3s forwards;
-    position: relative;
-    margin-bottom: 35px;    
 }
 
 @keyframes select1{
@@ -699,12 +613,16 @@ ol, ul {
     display: block;
     width: 100%;
     height: 50px;
+    opacity: 0;
     background: #eeeeee;
+    position: relative;
+    margin-bottom: 35px; 
+}
+
+.Myselect2.animation-class{
     -webkit-animation: select2 3s forwards;
     -o-animation: select2 3s forwards;
     animation: select2 3s forwards;
-    position: relative;
-    margin-bottom: 35px; 
 }
 
 @keyframes select2{
@@ -722,13 +640,17 @@ ol, ul {
     display: block;
     width: 100%;
     height: 50px;
+    opacity: 0;
     background: #eeeeee;
-    -webkit-animation: select3 3s forwards;
-    -o-animation: select3 3s forwards;
-    animation: select3 3s forwards;
     position: relative;
     margin-bottom: 30px; 
     
+}
+
+.Myselect3.animation-class{
+    -webkit-animation: select3 3s forwards;
+    -o-animation: select3 3s forwards;
+    animation: select3 3s forwards;
 }
 
 @keyframes select3{
@@ -753,6 +675,9 @@ ol, ul {
     line-height: 30px;
     position: relative;
     opacity: 0;
+}
+
+.price_two.animation-class{
     -webkit-animation: prise 3s forwards;
     -o-animation: prise 3s forwards;
     animation: prise 3s forwards;
@@ -775,10 +700,13 @@ ol, ul {
     line-height: 30px;
     position: relative;
     opacity: 0;
+    margin-left: 40px;
+}
+
+.number.animation-class{
     -webkit-animation: prise 3s forwards;
     -o-animation: prise 3s forwards;
     animation: prise 3s forwards;
-    margin-left: 40px;
 }
 
 .price input {
@@ -834,6 +762,9 @@ ol, ul {
     text-align: center;
     position: relative;
     opacity: 0;
+}
+
+.statsB1.animation-class{
     -webkit-animation: stats1 3s forwards;
     -o-animation: stats1 3s forwards;
     animation: stats1 3s forwards;
@@ -856,6 +787,9 @@ ol, ul {
     text-align: center;
     position: relative;
     opacity: 0;
+}
+
+.statsB2.animation-class{
     -webkit-animation: stats2 3s forwards;
     -o-animation: stats2 3s forwards;
     animation: stats2 3s forwards;
@@ -1016,10 +950,14 @@ ol, ul {
     margin-left: 20px;
     position: relative;
     opacity: 0;
+    
+    z-index: 0;
+}
+
+.imm1.animation-class{
     -webkit-animation: imm1 3s forwards;
     -o-animation: imm1 3s forwards;
     animation: imm1 3s forwards;
-    z-index: 0;
 }
 
 @keyframes imm1{
@@ -1037,10 +975,13 @@ ol, ul {
     margin-left: 20px;
     position: relative;
     opacity: 0;
+    z-index: 0;
+}
+
+.imm2.animation-class{
     -webkit-animation: imm2 3s forwards;
     -o-animation: imm2 3s forwards;
     animation: imm2 3s forwards;
-    z-index: 0;
 }
 
 @keyframes imm2{
